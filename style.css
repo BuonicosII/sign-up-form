@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Roboto:wght@100&display=swap');
+
+
 *, *:before, *:after {
     box-sizing: border-box;
-    border: solid red 1px;
   }
 
 body {
@@ -14,20 +16,22 @@ body {
 }
 
 .backgroundimg {
-    width: calc((100vw / 10) * 4);
+    flex-grow: 2;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Alfons_Mucha_-_Fruit2.jpg/1295px-Alfons_Mucha_-_Fruit2.jpg);
     background-position-x: center;
     background-position-y: -400px;
+    border-right: 0.6rem solid rgb(41, 9, 9);
+    width: 40vw;
 }
 
 .ui {
-    width: calc((100vw / 10) * 6);
+    flex-grow: 3;
     flex-wrap: wrap;
+    width: 60vw;
 }
 
 .formheader, .formfooter, form {
     display: flex;
-    height: calc(100vh / 3);
     width: 100%;
 }
 
@@ -35,24 +39,32 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding: 3rem;
+    background-color: bisque;
+    color: 0.6rem solid rgb(41, 9, 9);
 }
 
 header {
-    font-size: 3rem;
+    font-size:  calc(1.5rem + 1.5vw);
     font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Amita';
 }
 
 header ~ p {
-    font-size: 1.5rem;
+    font-size: calc(1rem + 0.5vw);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 form {
-    padding: 1.5rem;
+    padding: 3rem;
     flex-wrap: wrap;
+    border-top: 0.3rem solid rgb(41, 9, 9);
 }
 
 form div {
-    width: calc((100vw / 10) * 2);
+    width: 20vw;
     margin-right: 1.5rem;
     display: flex;
     flex-wrap: wrap;
