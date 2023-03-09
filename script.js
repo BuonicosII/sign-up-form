@@ -1,9 +1,12 @@
 let nameValidation = document.querySelector('#firstName');
 
-//function check () {
+function nameCheck () {
     if (nameValidation.value.length !== 0) {
-        nameValidation.classList.add('valid');
-    };
-//}
+        nameValidation.setAttribute('class', 'valid');
+    } else {
+        nameValidation.removeAttribute('class', 'valid')
+    }
+}
 
-//check();
+nameValidation.addEventListener("focusout", nameCheck);
+
